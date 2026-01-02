@@ -24,7 +24,7 @@ export default function Home() {
         <Link href="/asteroid" className="start">Start Game</Link>
 
       </div>
-      <Image src="/asteroidimg.png" alt="Asteroid Game" height={450} width={450} className="asteroidimage"></Image>
+      <Image src="/asteroidimg3.png" alt="Asteroid Game" height={475} width={475} className="asteroidimage"></Image>
       <h1 className="footer">Created by Dawson</h1>
     </div>
   );

@@ -14,13 +14,13 @@ export default function P5Game() {
       let t_width = 25;
       let t_height = 35;
 
-      let border = 5;
+      let border = 0;
       let width = window.innerWidth;
       let height = window.innerHeight - border;
 
       p.setup = () => {
         p.createCanvas(width, height);
-        p.frameRate(60);
+        p.frameRate(100);
       };
 
       p.windowResized = () => {

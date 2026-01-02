@@ -1,26 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import "tailwindcss";
 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000;
+  --mainfont: 'Press Start 2P', monospace;
+  --greencolor: #1e6900;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.mainscreen {
+  min-height: 100vh;
+  background-color: var(--background);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.centersection {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.title {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: translate(-50%);
+  font-family: var(--mainfont);
+  font-size: x-large;
+  color: var(--greencolor);
+}
+
+.footer {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%);
+  font-family: var(--mainfont);
+  font-size: medium;
+  font-style: italic;
+  color: var(--greencolor);
+}
+
+p{
+  font-family: var(--mainfont);
+  color: aliceblue;
+  font-size: medium;
+}
+
+
+h2 {
+  font-family: var(--mainfont);
+  color: aliceblue;
+  font-size: larger;
+}
+
+.start {
+  width: auto;
+  height: auto;
+  padding: 15px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--greencolor);
+  border: 2px solid white;
+  color: aliceblue;
+  font-family: var(--mainfont);
+  font-size: large;
+  font-weight: 400;
+  border-radius: 12px;
+}
+
+.start:hover {
+  scale: 1.02;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.start:active {
+  scale: .98;
+}
+
+.asteroidimage {
+  border-radius: 12px;
+  image-rendering: crisp-edges;
+  box-shadow: 2px 2px 16px rgba(223, 223, 223, 0.5);
 }

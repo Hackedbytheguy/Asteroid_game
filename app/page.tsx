@@ -9,7 +9,7 @@ export default function Home() {
       <div className="centersection">
         <h2>How to play</h2>
         <br></br>
-        <p>1. Use the arrows keys (Up/Left/Right) to traverse the map and avoid
+        <p>1. Use the arrow keys (Up/Left/Right) to traverse the map and avoid
           asteroids.</p>
         <br></br>
 
